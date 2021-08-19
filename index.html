@@ -33,8 +33,11 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#research">Research</a>
-            </li>
+            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
           </li>
@@ -51,38 +54,44 @@
 
   <header class="bg-primary text-white">
     <div class="container text-center">
-      <h1>Md <span style="font-weight:bold;">Ashiq</span>ur Rahman</h1>
+      <h1>Md <span style="font-weight:bold;">Ashiq</span>ur <span style="font-weight:bold;">Rahman</span></h1>
       <!-- <p class="lead">Researcher, Problem-solver, Mentor</p> -->
       <p class="lead">Researcher ~ Problem solver ~ Mentor</p>
       <div class="row justify-content-center">
         <div class="col-auto">
           <a href="https://www.cs.arizona.edu/person/md-ashiqur-rahman" target="_blank">
             <img src="images/arizona.png" style="height:2em" title="md-ashiqur-rahman" alt="cs.arizona">
+            <p>Arizona</p>
           </a>
         </div>
         <div class="col-auto">
           <a href="https://www.linkedin.com/in/ashiqopu117" target="_blank">
             <img src="images/linkedin.png" style="height:2em" title="LinkedIn" alt="LinkedIn">
+            <p>LinkedIn</p>
           </a>
         </div>
         <div class="col-auto">
           <a href="https://scholar.google.com/citations?user=hYY1wDEAAAAJ&hl=en" target="_blank">
             <img src="images/scholar.png" style="height:2em" title="GScholar" alt="Scholar">
+            <p>GScholar</p>
           </a>
         </div>
         <div class="col-auto">
           <a href="https://www.github.com/ashiqopu" target="_blank">
             <img src="images/github.png" style="height:2em" title="GitHub" alt="GitHub">
+            <p>Github</p>
           </a>
         </div>
         <div class="col-auto">
           <a href="resume.pdf" target="_blank">
             <img src="images/resume.png" style="height:2em" title="resume" alt="resume">
+            <p>Resume</p>
           </a>
         </div>
       </div>
     </div>
   </header>
+
   <section id="about">
     <div class="container">
       <div class="row">
@@ -121,7 +130,72 @@
     </div>
   </section>
 
-  <section id="publications">
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h2>Projects</h2>
+          <br>
+          <ul>
+            
+            <li>
+              <h4>NDN in wireless ad-hoc, delay-tolerant and challenging networks.</h4>
+              <p class="lead">
+                Over the past few decades, wireless communication technology has improved manifold, and the number of wireless devices has increased exponentially and will continue to be so in the coming years. However, the backbone of communication still relies upon the IP-based end-to-end protocol stack. As a result, communication in multi-hop wireless environments such as military networks on the battlefield or peer-to-peer data exchange under mobility such as vehicular networks suffers greatly under frequent link-breakage and packet loss from mobility, hidden station problems, to name a few. Application performance in such networks suffers manifold because of mandatory pathfinding and end-to-end communication of IP. Focusing on this "IP" backbone has led to more complex protocol designs, such as complex tree formation in multicast groups. 
+              </p>
+              <p class="lead">
+                Named Data Networking [1] or NDN re-imagines the communication stack from the ground up and focuses on the "data first"  model. Such data-centric design with "named" content promises scalable and reliable data retrieval by the network through built-in multicast, loop detection, caching, hop-by-hop packet forwarding management. However, how to properly use NDN in wireless networks is still under vigorous investigation.
+              </p>
+              <p class="lead">
+                In my Doctoral research, I am focusing on the different aspects or segments of the network stack and NDN protocols to improve application performance. The overall work has the following significant sub-sections,
+              </p>
+                <ul>
+                  <li>
+                    Improve data retrieval rate by improving the network layer performance. We avoid protocol messages altogether and only use Interest-Data exchange to learn path towards any closest data node and re-learn a newer one when loss or path breakage occurs through in-network RTT measurement.
+                  </li>
+                  <li>
+                    Next, we show that adaptive-rate applications in ad-hoc wireless networks suffer from redundant data transmission because of stale PIT entries. Furthermore, out-of-order data retrieval introduces excessive channel contention. Thus, we use the congestion window limit and propose a novel consumer side RTT-based dynamic PIT lifetime setup to reduce redundant data transmission. Together, they significantly increase application throughput.
+                  </li>
+                  <li>
+                    We then focus on the Link-layer to improve single-hop communication and minimize resource usage. This ongoing work promises to improve link bandwidth usage.
+                  </li>
+                  <li>
+                    Finally, we investigate how we can adequately utilize NDN in delay-tolerant networks with minimal resource usage and high data exchange rate.
+                  </li>
+                </ul>
+            </li>
+            
+            <br>
+
+            <li>
+              <h4>Network Coded Data Dissemination in RSU-based Vehicular Ad-hoc Networks (VANETs).</h4>
+              <p class="lead">
+                This project focuses on the challenges of efficient packet scheduling in a multi-RSU vehicular ad-hoc network. Application of network coding in packet scheduling for both single item and multi-item query has been investigated to minimize wireless broadcast data transmissions and overall Vehicle-to-RSU communication latency to provide improved road-safety and infotainment. In single item query, a vehicle asks for a single item which is a simple node or vertex in a graph. On the other hand, a vertex in a multi-item query consists of multiple data points. Moreover, data items can also have different sizes (heterogeneous). Our work focused on solving scheduling and optimization problems primarily in three different cases.
+              </p>
+                <ul>
+                  <li>
+                    We used a weighted moving average-based coding technique to encode heterogeneous data items in single item request scenarios.
+                  </li>
+                  <li>
+                    Next, we proposed a scheduling technique that encodes multi-item queries for homogeneous data items. 
+                  </li>
+                  <li>
+                    We also proposed cooperative cache transfer technique where an RSU deduces vehicles' movements to transfer cache information to next possible RSU(s) reducing bandwidth usage for cache information upload required for network coding.
+                  </li>
+                </ul>
+                <br>
+              <p class="lead">
+                Our work achieved significant lower latency and wireless broadcast overhead with high data-retrieval rate, compared to the state-of-the-art techniques available at that time.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
@@ -131,27 +205,39 @@
               <li>
                 [<i>Accepted</i>] Md Ashiqur Rahman, Beichuan Zhang, <span style="font-weight:bold;">"On the Analysis of Adaptive-Rate Applications in Data-Centric Wireless Ad-Hoc Networks"</span>, The 2021 IEEE 46th Conference on Local Computer Networks (LCN).
               </li>
+              <br>
               <li>
                 [<i>Accepted</i>] Md Ashiqur Rahman, Beichuan Zhang, <span style="font-weight:bold;">"On Data-centric Forwarding in Mobile Ad-hoc Networks: Baseline Design and Simulation Analysis"</span>, The 30th International Conference on Computer Communications and Networks (ICCCN 2021).
               </li>
+              <br>
               <li>
                 Teng Liang, Ju Pan, Md Ashiqur Rahman, Junxiao Shi, Davide Pesavento, Alexander Afanasyev, Beichuan Zhang, <span style="font-weight:bold;">"Enabling Named Data Networking Forwarder to Work Out-of-the-box at Edge Networks"</span>, 2020 IEEE International Conference on Communications Workshops (ICC Workshops).
               </li>
+              <br>
               <li>
                 G. G. MD. Nawaz Ali, MD. Noor-A-Rahim, Md. Ashiqur Rahman, Beshah Ayalew, Peter H. J. Chong, and Yong Liang Guan, <span style="font-weight:bold;">"Cooperative cache transfer-based on-demand network coded broadcast in vehicular networks"</span>, ACM Trans. Embed. Comput. Syst. 18 (2019), 38–1.
               </li>
+              <br>
+              <li>
+                GGM Nawaz Ali, Md Noor-A-Rahim, Md A Rahman, Syeda Khairunnesa Samantha, Peter HJ Chong, Yong Liang Guan, <span style="font-weight:bold;">"An Efficient Cross-layer Coding-assisted Heterogeneous Data Access in Vehicular Networks"</span>, 2018 IEEE International Conference on Communications (ICC).
+              </li>
+              <br>
               <li>
                 G. G. Md. Nawaz Ali, Md. Noor-A-Rahim, Md. Ashiqur Rahman, Syeda Khairunnesa Samantha, Peter Han Joo Chong, Yong Liang Guan, <span style="font-weight:bold;">"Efficient real-time coding-assisted heterogeneous data access in vehicular networks"</span>, IEEE Internet of Things Journal (Early Access) (2018).
               </li>
+              <br>
               <li>
                 G. G. M. Nawaz Ali, Md. A. Rahman, S. K. Samantha, Yumeng Gao, Peter H.J. Chong, and Y. L. Guan, <span style="font-weight:bold;">"Efficient coding based heterogeneous data access in vehicular networks"</span>, 2017 IEEE International Conference on Communications (ICC), IEEE, 2017.
               </li>
+              <br>
               <li>
                 Md. Ashiqur Rahman, G. G. Md. Nawaz Ali, Yumeng Gao, Syeda K. Samantha, and Peter H. J. Chong, <span style="font-weight:bold;">"On accessing heterogeneous data items using network coding in wireless broadcast"</span>, 2016 IEEE 84th Vehicular Technology Conference (VTC-Fall), IEEE, 2017.
               </li>
+              <br>
               <li>
                 GG Md Nawaz Ali, Md Ashiqur Rahman, Peter Han Joo Chong, and Syeda Khairunnesa Samantha, <span style="font-weight:bold;">"On efficient data dissemination using network coding in multi-rsu vehicular ad hoc networks"</span>, 2016 IEEE 83rd Vehicular Technology Conference (VTC Spring), IEEE, 2016, pp. 1–5. 
               </li>
+              <br>
               <li>
                 Md. A. Rahman, G.G.M. Nawaz Ali, Peter H.J. Chong, S.K. Samantha, M.F. Muntasir, and C. Chen, <span style="font-weight:bold;">"On scheduling real-time multi-item query with network coding in multi-rsu vehicular networks"</span>, Embedded and Real-Time Computing Systems and Applications (RTCSA), 2016 IEEE 22nd International Conference on, IEEE, 2016, pp. 218–227.
               </li>
@@ -162,18 +248,18 @@
     </div>
   </section>
 
-  <section id="bio" class="bg-light">
+  <section id="bio">
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
           <h2>Bio</h2>
-          <p class="lead">I started my doctoral program in the Department of Computer Science at The University of Arizona in August 2016. On my way to the dissertation, I have earned my Master of Science. Before that, I attended <a href="http://kuet.ac.bd/">Khulna University of Engineering & Technology, Bangladesh</a>, from 02/2011 to 05/2015 and completed my B.Sc. degree in <a href="http://www.kuet.ac.bd/department/CSE/">Computer Science and Engineering</a>. Since 2011, I have gathered experience as a researcher, developer, problem-solver, mentor, and instructor. I love to work on challenging problems and finding more straightforward solutions that others might easily overlook.</p>
+          <p class="lead">I started my doctoral program in the Department of Computer Science at The University of Arizona in August 2016. On my way to the dissertation, I have earned my Master of Science. Before that, I attended <a href="http://kuet.ac.bd/">Khulna University of Engineering & Technology, Bangladesh</a>, from 02/2011 to 05/2015 and completed my B.Sc. degree in <a href="http://www.kuet.ac.bd/department/CSE/">Computer Science and Engineering</a>. Since 2011, I have gathered experience as a researcher, developer, problem-solver, mentor, and instructor. I love to work on challenging problems and learning/finding new techniques to solve them.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
@@ -190,6 +276,9 @@
           <p class="lead">
             1040 E. 4th Street, Tucson AZ 85721
           </p>
+          <p class="lead">
+            Email: marahman[at]cs[dot]arizona[dot]edu
+          </p>
         </div>
       </div>
     </div>
@@ -198,7 +287,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Md Ashiqur Rahman ~ 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Md Ashiqur Rahman ~ 2021</p>
     </div>
     <!-- /.container -->
   </footer>
