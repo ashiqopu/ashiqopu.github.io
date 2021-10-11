@@ -10,6 +10,11 @@
 
   <title>/Ashiq Rahman</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,7 +26,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">/Ashiq</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,6 +62,9 @@
 
   <header class="bg-primary text-white">
     <div class="container text-center">
+      <div class="row justify-content-center">
+        <img src="images/profile.jpg" style="height:15em" class="rounded-corners" title="md-ashiqur-rahman">
+      </div>
       <h1>Md <span style="font-weight:bold;">Ashiq</span>ur <span style="font-weight:bold;">Rahman</span></h1>
       <!-- <p class="lead">Researcher, Problem-solver, Mentor</p> -->
       <p class="lead">Researcher ~ Problem solver ~ Mentor</p>
@@ -126,7 +134,7 @@
         <div class="col-lg-11 mx-auto">
           <h2>Research</h2>
           <p class="lead">
-            I am working in the Network Research Lab (NRL) with <a href="https://www.cs.arizona.edu/person/beichuan-zhang">Dr. Beichuan Zhang</a> and focusing on application and challenges of Named Data Networking in ad-hoc networks and disruption tolerant networks. Previously I worked on scheduling algorithms and network coding for vehicle-to-infrastructure communication in Vehicular Ad-hoc Networks (VANETs). I am also interested in Database Systems, Natural Language Processing, Machine Learning and Software Engineering. 
+            I am working in the Network Research Lab (NRL) with <a href="https://www.cs.arizona.edu/person/beichuan-zhang">Dr. Beichuan Zhang</a> and focusing on application and challenges of Named Data Networking in wireless networks and disruption tolerant networks. Previously I worked on scheduling algorithms and network coding for vehicle-to-infrastructure communication in Vehicular Ad-hoc Networks (VANETs). I am also interested in Database Systems, Natural Language Processing, Machine Learning and Software Engineering. 
           </p>
           <!-- <ul>
             <li>Clickable nav links that smooth scroll to page sections</li>
@@ -153,7 +161,7 @@
                 Over the past few decades, wireless communication technology has improved manifold, and the number of wireless devices has increased exponentially and will continue to be so in the coming years. However, the backbone of communication still relies upon the IP-based end-to-end protocol stack. As a result, communication in multi-hop wireless environments such as military networks on the battlefield or peer-to-peer data exchange under mobility such as vehicular networks suffers greatly under frequent link-breakage and packet loss from mobility, hidden station problems, to name a few. Application performance in such networks suffers manifold because of mandatory pathfinding and end-to-end communication of IP. Focusing on this "IP" backbone has led to more complex protocol designs, such as complex tree formation in multicast groups. 
               </p>
               <p class="lead">
-                Named Data Networking [1] or NDN re-imagines the communication stack from the ground up and focuses on the "data first"  model. Such data-centric design with "named" content promises scalable and reliable data retrieval by the network through built-in multicast, loop detection, caching, hop-by-hop packet forwarding management. However, how to properly use NDN in wireless networks is still under vigorous investigation.
+                Named Data Networking or NDN re-imagines the communication stack from the ground up and focuses on the "data first"  model. Such data-centric design with "named" content promises scalable and reliable data retrieval by the network through built-in multicast, loop detection, caching, hop-by-hop packet forwarding management. However, how to properly use NDN in wireless networks is still under vigorous investigation.
               </p>
               <p class="lead">
                 In my Doctoral research, I am focusing on the different aspects or segments of the network stack and NDN protocols to improve application performance. The overall work has the following significant sub-sections,
@@ -212,11 +220,15 @@
           <p class="lead">
             <ul style="font-size: large">
               <li>
-                [<i>Accepted</i>] Md Ashiqur Rahman, Beichuan Zhang, <span style="font-weight:bold;">"On the Analysis of Adaptive-Rate Applications in Data-Centric Wireless Ad-Hoc Networks"</span>, The 2021 IEEE 46th Conference on Local Computer Networks (LCN).
+                [<i>Accepted</i>] Md Ashiqur Rahman, Teng Liang, Beichuan Zhang, <span style="font-weight:bold;">"BLEnD: Improving NDN Performance Over Wireless Links Using Interest Bundling"</span>, 2021 Military Communications Conference (MILCOM).
               </li>
               <br>
               <li>
-                [<i>Accepted</i>] Md Ashiqur Rahman, Beichuan Zhang, <span style="font-weight:bold;">"On Data-centric Forwarding in Mobile Ad-hoc Networks: Baseline Design and Simulation Analysis"</span>, The 30th International Conference on Computer Communications and Networks (ICCCN 2021).
+                Md Ashiqur Rahman, Beichuan Zhang, <span style="font-weight:bold;">"On the Analysis of Adaptive-Rate Applications in Data-Centric Wireless Ad-Hoc Networks"</span>, The 2021 IEEE 46th Conference on Local Computer Networks (LCN).
+              </li>
+              <br>
+              <li>
+                Md Ashiqur Rahman, Beichuan Zhang, <span style="font-weight:bold;">"On Data-centric Forwarding in Mobile Ad-hoc Networks: Baseline Design and Simulation Analysis"</span>, The 30th International Conference on Computer Communications and Networks (ICCCN 2021).
               </li>
               <br>
               <li>
@@ -380,7 +392,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-primary">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Md Ashiqur Rahman ~ 2021</p>
     </div>
